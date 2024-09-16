@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDx Jakarta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .login-btn {
+            background-color: #e62b1e;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #c22518;
+        }
+
+        header {
+            background-color: #e62b1e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .event-header {
+            background-color: #000;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .event-header h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .event-header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .event-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .event-details .description {
+            width: 70%;
+        }
+
+        .event-details .map {
+            width: 25%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .event-details {
+                flex-direction: column;
+            }
+
+            .event-details .description, .event-details .map {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#">Jam Tangan</a></li>
+        <li><a href="#">Menemukan</a></li>
+        <li><a href="#">Menghadiri</a></li>
+        <li><a href="#">Ikut</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Keanggotaan</a></li>
+    </ul>
+    <a href="#" class="login-btn">Masuk</a>
+</nav>
+
+<!-- Page Header -->
+<header>
+    <h1>TEDx Jakarta</h1>
+</header>
+
+<div class="container">
+    <div class="event-header">
+        <h2>TEDx Jakarta</h2>
+        <p>Peristiwa ini terjadi pada 9 Desember 2023</p>
+        <p>Jakarta, Jakarta Raya, Indonesia</p>
+    </div>
+
+    <div class="event-details">
+        <div class="description">
+            <h3>Tentang TEDx Jakarta</h3>
+            <p>Dalam semangat ide yang layak disebarkan, TEDx adalah program acara lokal yang diselenggarakan sendiri yang mempertemukan orang-orang untuk berbagi pengalaman seperti TED. Di acara TEDx, video TEDTalks dan pembicara langsung berpadu untuk memicu diskusi mendalam dan koneksi dalam kelompok kecil.</p>
+            <p>Acara lokal yang diselenggarakan sendiri ini diberi merek TEDx, di mana x = acara TED yang diselenggarakan secara independen. Konferensi TED memberikan panduan umum untuk program TEDx, tetapi acara TEDx individual diselenggarakan sendiri (tunduk pada aturan dan regulasi tertentu).</p>
+        </div>
+        <div class="map">
+            <h3>Lokasi</h3>
+            <p>Taman Mini Indonesia Indah</p>
+            <p>Jl. Taman Mini Indonesia Indah, Jakarta, 13820</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.4455828038717!2d106.8887674747874!3d-6.302341195436277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c9ef2f42ab7%3A0x204c8bbdf5fe1a8c!2sTaman%20Mini%20Indonesia%20Indah!5e0!3m2!1sid!2sid!4v1694898473783!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 TEDx Jakarta</p>
+</footer>
+
+</body>
+</html>
